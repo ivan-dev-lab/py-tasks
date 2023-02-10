@@ -1,5 +1,6 @@
 #-*-coding:cp1251-*-
 
+
 #algoritm of binary search
 from random import randint
 def binary_search():
