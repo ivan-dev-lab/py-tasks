@@ -32,6 +32,4 @@ def find_Fib_seq ():
         seq.append(seq[i]+seq[i+1])
         i+=1
     print(seq)
-  
-
 #find_Fib_seq()
