@@ -1,7 +1,7 @@
 #-*-coding:cp1251-*-
 
 
-#algoritm of binary search
+#binary search
 from random import randint
 def binary_search():
     n = randint(1,100)
@@ -34,4 +34,4 @@ def find_Fib_seq ():
     print(seq)
   
 
-find_Fib_seq()
+#find_Fib_seq()
