@@ -20,3 +20,18 @@ def binary_search():
         
     print(f"num finded!, the desired num = {n}")
 #binary_search()
+
+
+#finding the Fibonacci sequence
+def find_Fib_seq ():
+    limit = int(input("up to what number is the sequence needed: "))
+    i = 0
+    seq = [0,1]
+    i = 0
+    while len(seq) < limit:
+        seq.append(seq[i]+seq[i+1])
+        i+=1
+    print(seq)
+  
+
+find_Fib_seq()
