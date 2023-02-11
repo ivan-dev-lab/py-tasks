@@ -23,17 +23,17 @@ def binary_search() -> int:
 
 
 #finding the Fibonacci sequence
-
 #limit = int(input("up to what number is the sequence needed: "))
-def find_Fib_seq () -> list:
+def find_Fib_seq (l) -> list:
     i = 0
     seq = [0,1]
     i = 0
-    while len(seq) < limit:
+    while len(seq) < l:
         seq.append(seq[i]+seq[i+1])
         i+=1
     return seq
-#print(f"the sequence = {find_Fib_seq()}")
+#print(f"the sequence = {find_Fib_seq(limit)}")
+
 
 #next prime number
 def find_next_prime_number ():
@@ -49,3 +49,28 @@ def find_next_prime_number ():
             print("it is not prime number")
         n = int(input("enter number: "))
 #find_next_prime_number()
+
+
+#transfer from systems
+#N = input("enter number from decimal to binary: ")
+#N = input("enter number from binary to decimal: ")
+def dec_to_bin (n: int) -> str:
+    bin_list = []
+    while n//2!=0:
+        bin_list.append(n%2)
+        n//=2
+    bin_list.append(1)
+    bin_list.reverse()
+    bin_list = list(map(str,bin_list))
+    return ''.join(bin_list)
+def bin_to_dec (n: str) -> int: 
+    bin_list = list(n)
+    print(bin_list)
+    bin_list.reverse()
+    dec_int = 0
+    for i,n in enumerate(bin_list):
+        print(i,n)
+        dec_int+=int(n)*(2**int(i))
+    return dec_int
+#print(dec_to_bin(int(N)))
+#print(bin_to_dec(N))
