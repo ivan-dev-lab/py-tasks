@@ -32,9 +32,4 @@ def find_Fib_seq () -> list:
         seq.append(seq[i]+seq[i+1])
         i+=1
     return seq
-print(f"the sequence = {find_Fib_seq()}")
-
-
-#next prime number
-def find_next_prime_number ():
-    ...
+#print(f"the sequence = {find_Fib_seq()}")
