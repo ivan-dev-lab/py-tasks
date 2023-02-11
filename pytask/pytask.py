@@ -23,7 +23,8 @@ def binary_search() -> int:
 
 
 #finding the Fibonacci sequence
-limit = int(input("up to what number is the sequence needed: "))
+
+#limit = int(input("up to what number is the sequence needed: "))
 def find_Fib_seq () -> list:
     i = 0
     seq = [0,1]
@@ -33,3 +34,18 @@ def find_Fib_seq () -> list:
         i+=1
     return seq
 #print(f"the sequence = {find_Fib_seq()}")
+
+#next prime number
+def find_next_prime_number ():
+    n = int(input("enter number: "))
+    while n!=0:
+        s = 0
+        for num in range(2,n+1):
+            if n%num==0 and num!=n:
+                s+=1
+        if s==0:
+            print("it is prime number")
+        else:
+            print("it is not prime number")
+        n = int(input("enter number: "))
+#find_next_prime_number()
