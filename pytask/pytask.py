@@ -73,4 +73,4 @@ def bin_to_dec (n: str) -> int:
         dec_int+=int(n)*(2**int(i))
     return dec_int
 #print(dec_to_bin(int(N)))
-#print(bin_to_dec(N))
+#print(bin_to_dec(N))  
