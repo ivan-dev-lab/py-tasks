@@ -72,5 +72,15 @@ def bin_to_dec (n: str) -> int:
         print(i,n)
         dec_int+=int(n)*(2**int(i))
     return dec_int
-#print(dec_to_bin(int(N)))
-#print(bin_to_dec(N))  
+#print(dec_to_bin(int(N))) 
+#print(bin_to_dec(N))
+
+
+#factorial
+N = int(input("enter nuber for see his factorial: "))
+def factorial_v1 (num: int) -> int:
+    f = 1
+    for n in range(1,num+1):
+        f*=n
+    return f
+print(factorial_v1(N))
