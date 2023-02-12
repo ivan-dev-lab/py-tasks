@@ -76,11 +76,11 @@ def bin_to_dec (n: str) -> int:
 #print(bin_to_dec(N))
 
 
-#factorial
-N = int(input("enter nuber for see his factorial: "))
-def factorial_v1 (num: int) -> int:
+#finding factorial
+#N = int(input("enter nuber for see his factorial: "))
+def factorial (num: int) -> int:
     f = 1
     for n in range(1,num+1):
         f*=n
     return f
-print(factorial_v1(N))
+#print(factorial(N))
